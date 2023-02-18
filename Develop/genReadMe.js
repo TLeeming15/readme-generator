@@ -1,38 +1,58 @@
 class MarkDown {
+
+    static licenseBadge(license){
+        const badges = {
+            mit: "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses?MIT)",
+            isc:"[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)",
+            gnugplv3:"[![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)](https://www.gnu.org/licenses/lpgl-3.0"
+        }
+        return badges[license]
+    }
+
+    static createLicenseLink(license){
+        const licenseLinks = {
+            mit: "[MIT](https://choosealicense.com/licenses/mit/)",
+            isc: "[ISC](https://choosealicense.com/licenses/isc/)",
+            gnugplv3: "[GNUGPLv3](https://choosealicense.com/licenses/gpl-3.0/)"
+        }
+        return licenseLinks[license]
+    }
     static generateReadme(answers){
         return `
-        # $(answers.title)
+ # ${answers.title}
 
-        ## Table of Contents
-        - [Project description](#Description)
-        - [Usage](#Usage)
-        - [Tests](#Tests)
-        - [Installation](#Installation)
-        - [Contributing](#Contributing)
-        - [Questions](#Questions)
-        - [License](#License)
+ ${this.licenseBadge(answers.license)}
 
-        ## Description
-        ${answers.description}
+## Table of Contents
+ - [Project description](#Description)
+ - [Usage](#Usage)
+ - [Tests](#Tests)
+ - [Installation](#Installation)
+ - [Contributing](#Contributing)
+ - [Questions](#Questions)
+- [License](#License)
 
-        ## Usage
-        ${answers.usage}
+## Description
+${answers.description}
 
-        ## Tests
-        ${answers.tests}
+## Usage
+${answers.usage}
 
-        ## Installation
-        ${answers.installation}
+## Tests
+${answers.tests}
 
-        ## Contributing
-        ${answers.contributing}
+## Installation
+${answers.installation}
 
-        ## Questions
-        ${answers.email}
-        ${answers.github}
+## Contributing
+${answers.contributing}
 
-        ## License
-        $(answers.license)
+## Questions
+${answers.email}
+${answers.github}
+
+## License
+${this.createLicenseLink(answers.license)}
         
         `
     }
