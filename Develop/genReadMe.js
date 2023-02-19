@@ -1,5 +1,5 @@
 class MarkDown {
-
+// License badges
     static licenseBadge(license){
         const badges = {
             mit: "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses?MIT)",
@@ -8,7 +8,7 @@ class MarkDown {
         }
         return badges[license]
     }
-
+// Links to learn more about the chosen license
     static createLicenseLink(license){
         const licenseLinks = {
             mit: "[MIT](https://choosealicense.com/licenses/mit/)",
@@ -17,12 +17,13 @@ class MarkDown {
         }
         return licenseLinks[license]
     }
+    // Generates README.md with the answers from user input. Also links for the table of contents and Github.
     static generateReadme(answers){
         return `
  # ${answers.title}
 
  ${this.licenseBadge(answers.license)}
-
+        
 ## Table of Contents
  - [Project description](#description)
  - [Usage](#usage)

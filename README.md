@@ -35,11 +35,10 @@ The better the README the more likely you will have contributors. Sometimes this
 
 The following images show the application in action. 
 
-<img src=".png" alt=""/>
+<img src=".Develop/images/user-input.png" alt="An image of the terminal showing all of the questions and user input"/>
 
-<img src=".png" alt=""/>
+<img src=".Develop/images/example-readme.png" alt="An image of the created README from the user input"/>
 
-<img src=".png" alt=""/>
 
 
 
@@ -49,8 +48,8 @@ The following images show the application in action.
 Tyler Leeming https://github.com/TLeeming15
 ## Installation
 
-N/A
+To install dependancies: npm i 
 
 ## License
 
-MI
+MIT
