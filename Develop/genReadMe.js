@@ -24,13 +24,13 @@ class MarkDown {
  ${this.licenseBadge(answers.license)}
 
 ## Table of Contents
- - [Project description](#Description)
- - [Usage](#Usage)
- - [Tests](#Tests)
- - [Installation](#Installation)
- - [Contributing](#Contributing)
- - [Questions](#Questions)
-- [License](#License)
+ - [Project description](#description)
+ - [Usage](#usage)
+ - [Tests](#tests)
+ - [Installation](#installation)
+ - [Contributing](#contributing)
+ - [Questions](#questions)
+- [License](#license)
 
 ## Description
 ${answers.description}
@@ -49,7 +49,7 @@ ${answers.contributing}
 
 ## Questions
 ${answers.email}
-${answers.github}
+[Click here to see ${answers.github}'s Github](https://www.github.com/${answers.github})
 
 ## License
 ${this.createLicenseLink(answers.license)}
