@@ -35,7 +35,11 @@ The better the README the more likely you will have contributors. Sometimes this
 
 The following images show the application in action. This is a link to the video demonstration: https://drive.google.com/file/d/1RL4b8qjUy-Q0ZNNYMn1nFXZw1dgOXNoF/view
 
+This image shows the user input:
+
 <img src="Develop/images/user-input.png" alt="An image of the terminal showing all of the questions and user input"/>
+
+This image shows the generated README.md from the user input above:
 
 <img src="Develop/images/example-readme.png" alt="An image of the created README from the user input"/>
 
