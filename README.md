@@ -33,7 +33,7 @@ The better the README the more likely you will have contributors. Sometimes this
 
 ## Usage
 
-The following images show the application in action. 
+The following images show the application in action. This is a link to the video demonstration: https://drive.google.com/file/d/1RL4b8qjUy-Q0ZNNYMn1nFXZw1dgOXNoF/view
 
 <img src="Develop/images/user-input.png" alt="An image of the terminal showing all of the questions and user input"/>
 
